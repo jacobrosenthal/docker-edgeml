@@ -1,5 +1,4 @@
-# cant build on docker cloud without exausing memory or ++-5: internal compiler error
-# had to max out all docker resources to successfully build locally
+# if you get Killed Returned a non-zero code: 137 you need to increase your docker resource allocation
 FROM ubuntu:16.04
 
 RUN apt-get update && apt-get -y install gcc g++ wget git make cpio && \
